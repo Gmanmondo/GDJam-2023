@@ -73,6 +73,26 @@ public class PickUpScript : MonoBehaviour
 
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (heldObj == null)
+            {
+                Debug.Log("E pressed, heldObj null");
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+                {
+                    Debug.Log(hit.transform.name);
+                    if (onvisual.transform.gameObject.GetComponent("HandleScript") != null)
+                    {
+                        Debug.Log("Handle seen");
+                        //Attempt to open door
+
+                        onvisual.transform.gameObject.GetComponent<HandleScript>().OpenDoorAttempt();
+                    }
+                }
+            }
+        }
     }
     void PickUpObject(GameObject pickUpObj)
     {

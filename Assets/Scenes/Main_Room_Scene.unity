@@ -1185,6 +1185,7 @@ GameObject:
   - component: {fileID: 2725276519891418425}
   - component: {fileID: 6841347609386453910}
   - component: {fileID: 6841347609386453911}
+  - component: {fileID: 6841347609386453912}
   m_Layer: 0
   m_Name: Frame
   m_TagString: Untagged
@@ -1510,7 +1511,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7272638917892908470}
   - component: {fileID: 7272638917892908472}
-  - component: {fileID: 7272638917892908471}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3060,6 +3060,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6360558719573625917, guid: 6873a864c28a28843a085b350b632372, type: 3}
+--- !u!114 &6841347609386453912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156151660531144274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9499528e45fc2e458957ba23b7ebb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyeAngry: 1
+  doorOpen: 0
 --- !u!33 &6919472886511076085
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3174,18 +3188,6 @@ Transform:
   m_Father: {fileID: 460390366}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7272638917892908471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155298510169952756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad87b3cc16a265546a2641935dc07516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &7272638917892908472
 Animator:
   serializedVersion: 5
@@ -3235,7 +3237,7 @@ GameObject:
   - component: {fileID: 7489958301520412956}
   - component: {fileID: 7489958301520412957}
   m_Layer: 0
-  m_Name: HandleMesh
+  m_Name: HandleBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3250,7 +3252,7 @@ BoxCollider:
   m_GameObject: {fileID: 7489958301520412955}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.3125, y: 0.1875, z: 0.3125}
   m_Center: {x: 0.375, y: 1.125, z: 6}
@@ -3266,7 +3268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: Press [E] to turn handle
+  description: Press [E] to Open Door
 --- !u!4 &7491156907104828676
 Transform:
   m_ObjectHideFlags: 0
