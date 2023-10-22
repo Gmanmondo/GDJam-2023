@@ -36,7 +36,7 @@ public class BrickScript : MonoBehaviour
                 Debug.Log("Damage =" + damage);
                 //Tell voice about it here
 
-                //Put audio here or smth idk
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.brickBreak, this.transform.position);
 
                 if (damage == 1)                   
                     GetComponent<MeshFilter>().mesh = firstDamage;
