@@ -41,7 +41,10 @@ public class BrickScript : MonoBehaviour
                 if (damage == 2)
                     GetComponent<MeshFilter>().mesh = secondDamage;
                 if (damage == 3)
+                {
+                    GameObject.Find("EyeManager").GetComponent<EyeManagerScript>().BrickBroken();
                     Destroy(this.gameObject);
+                }
 
 
                 remainingtimer = timer;

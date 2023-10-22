@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharp: 1
   description: A Peice of Plate - Sharp
 --- !u!1 &6457856899113525130
 GameObject:
@@ -291,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharp: 1
   description: A Peice of Plate - Sharp
 --- !u!1 &6997558305801995773
 GameObject:
@@ -420,4 +422,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharp: 1
   description: A Peice of Plate - Sharp

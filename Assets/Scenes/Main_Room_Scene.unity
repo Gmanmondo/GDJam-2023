@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 258251645}
   - component: {fileID: 258251646}
+  - component: {fileID: 258251647}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EyeHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,6 +169,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a178820979c0a744d891fa003fd51cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &258251647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258251644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &398549200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398549201}
+  - component: {fileID: 398549202}
+  m_Layer: 0
+  m_Name: EyeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398549201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398549200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 754671709}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398549202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398549200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db63f2535ae56d4286b11bdb21f86f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eye: {fileID: 258251644}
+  bars: {fileID: 7613357640689676402}
+  Door: {fileID: 156151660531144274}
 --- !u!1 &460390365
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +439,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1191583801}
+  - {fileID: 398549201}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1186,6 +1248,7 @@ GameObject:
   - component: {fileID: 6841347609386453910}
   - component: {fileID: 6841347609386453911}
   - component: {fileID: 6841347609386453912}
+  - component: {fileID: 6841347609386453913}
   m_Layer: 0
   m_Name: Frame
   m_TagString: Untagged
@@ -3072,8 +3135,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9499528e45fc2e458957ba23b7ebb00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyeAngry: 1
+  eyeAngry: 0
   doorOpen: 0
+--- !u!114 &6841347609386453913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156151660531144274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Press [E] to Open Door
 --- !u!33 &6919472886511076085
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3235,7 +3311,6 @@ GameObject:
   - component: {fileID: 1487827115696321307}
   - component: {fileID: 2338451220843570432}
   - component: {fileID: 7489958301520412956}
-  - component: {fileID: 7489958301520412957}
   m_Layer: 0
   m_Name: HandleBox
   m_TagString: Untagged
@@ -3256,19 +3331,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3125, y: 0.1875, z: 0.3125}
   m_Center: {x: 0.375, y: 1.125, z: 6}
---- !u!114 &7489958301520412957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489958301520412955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Press [E] to Open Door
 --- !u!4 &7491156907104828676
 Transform:
   m_ObjectHideFlags: 0

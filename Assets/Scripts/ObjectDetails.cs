@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ObjectDetails : MonoBehaviour
 {
+
+    public bool sharp;
     public string description;
 
 
