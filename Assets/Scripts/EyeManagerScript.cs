@@ -11,6 +11,7 @@ public class EyeManagerScript : MonoBehaviour
     public GameObject bars;
     public GameObject playerEye;
     public GameObject Door;
+    public GameObject WinDoor;
 
     public GameObject FMS;
     private void Start()
@@ -36,6 +37,7 @@ public class EyeManagerScript : MonoBehaviour
         Door.GetComponent<ObjectDetails>().description = "Press [E] to be Free";
         FMS.GetComponent<FallManagerScript>().badEnd = false;
         PlayerSingleton._pRef.pCont.moveSpeed = 2;
+        WinDoor.SetActive(true);
         playerEye.SetActive(true);
     }
 }

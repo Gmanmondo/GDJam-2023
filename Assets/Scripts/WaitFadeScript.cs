@@ -36,7 +36,7 @@ public class WaitFadeScript : MonoBehaviour
             {
                 GetComponent<Animator>().SetBool("fadeout", true);
                 fading = true;
-                timer = 2;
+                timer = 4;
             }
             else
             {
