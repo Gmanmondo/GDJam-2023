@@ -28,7 +28,6 @@ public class AudioManager : MonoBehaviour
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
-        Debug.Log("hello");
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)

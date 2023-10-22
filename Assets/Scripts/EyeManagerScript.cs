@@ -6,7 +6,7 @@ public class EyeManagerScript : MonoBehaviour
 {
 
 
-    
+    public GameObject brickBlood;
     public GameObject Eye;
     public GameObject bars;
     public GameObject playerEye;
@@ -23,6 +23,7 @@ public class EyeManagerScript : MonoBehaviour
     }
     public void BrickBroken()
     {
+        brickBlood.SetActive(true);
         bars.SetActive(false);
         Eye.SetActive(true);
         Door.GetComponent<HandleScript>().eyeAngry = true;
