@@ -28,7 +28,7 @@ public class BrickScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Bucket")
+        if (collision.transform.tag == "Throwable")
         {
             if (remainingtimer <= 0.0f)
             {
