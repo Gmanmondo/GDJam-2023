@@ -28,6 +28,7 @@ public class PlateScript : MonoBehaviour
     private void Shatter()
     {
         Instantiate(shards, transform.position,transform.rotation);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.plateBreak, this.transform.position);
         Destroy(this.gameObject);
     }
 }
