@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.UI;
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PickUpScript : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class PickUpScript : MonoBehaviour
     public float throwForce = 500f; //force at which the object is thrown at
     public float pickUpRange = 5f; //how far the player can pickup the object from
 
+    public TMP_Text descriptionText;
 
     private string textHolder;
     //References to what we are holding
@@ -18,31 +22,31 @@ public class PickUpScript : MonoBehaviour
     private bool canDrop = true; //to prevent accidents
     private int LayerNumber; //layer index
 
-    //Reference to script which includes mouse movement of player (looking around)
-    //we want to disable the player looking around when rotating the object
-    //example below 
-    //MouseLookScript mouseLookScript;
+   
     void Start()
     {
         LayerNumber = LayerMask.NameToLayer("Hold Layer");
         Debug.Log(LayerNumber.ToString());
-
-        //mouseLookScript = player.GetComponent<MouseLookScript>();
     }
     void Update()
     {
         RaycastHit onvisual;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out onvisual, pickUpRange))
         {
+            if (onvisual.transform.tag == "Ground" || onvisual.transform.tag == "Wall")
+            {
+                descriptionText.SetText("");
+            }
             if (onvisual.transform.gameObject.GetComponent("ObjectDetails") != null)
             {
                 textHolder = onvisual.transform.GetComponent<ObjectDetails>().description;
+                descriptionText.SetText(textHolder);
 
             }
         }
         else
         {
-
+            descriptionText.SetText("");
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
