@@ -2276,7 +2276,7 @@ GameObject:
   - component: {fileID: 1191583802}
   m_Layer: 0
   m_Name: Audio Manager
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2535,7 +2535,7 @@ MonoBehaviour:
       Data2: 1280234412
       Data3: -1634803049
       Data4: -769952052
-    Path: event:/Ambience/Brain
+    Path: event:/Ambience/Brain Sounds
 --- !u!1 &1290958582
 GameObject:
   m_ObjectHideFlags: 0

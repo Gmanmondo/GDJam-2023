@@ -20,6 +20,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &-8000187093051731279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Brain Sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Brain Sounds
+  Guid:
+    Data1: 1280469779
+    Data2: 1280234412
+    Data3: -1634803049
+    Data4: -769952052
+  Banks:
+  - {fileID: 134784188983510113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19617
 --- !u!114 &-6293138041781414013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 760
+--- !u!114 &-5479542973729026653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Heart Rate Monitor
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Heart Rate Monitor
+  Guid:
+    Data1: -73251661
+    Data2: 1141075986
+    Data3: 1307919273
+    Data4: -1893014938
+  Banks:
+  - {fileID: 134784188983510113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,16 +119,21 @@ MonoBehaviour:
   - {fileID: -9046705440229811737}
   - {fileID: 7113883065979547754}
   EditorEvents:
-  - {fileID: 3847472059584534691}
   - {fileID: 2076952806888901988}
   - {fileID: -6293138041781414013}
   - {fileID: 2792411017998031084}
+  - {fileID: -8000187093051731279}
+  - {fileID: -5479542973729026653}
   EditorParameters: []
   MasterBanks:
   - {fileID: -9046705440229811737}
   StringsBanks:
   - {fileID: 6545584241268025486}
+<<<<<<< Updated upstream
   cacheTime: 638335870546787841
+=======
+  cacheTime: 638335829662754184
+>>>>>>> Stashed changes
   cacheVersion: 131608
 --- !u!114 &134784188983510113
 MonoBehaviour:
@@ -91,10 +150,14 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
+<<<<<<< Updated upstream
   lastModified: 638335870546767832
+=======
+  lastModified: 638335829662754184
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
-    Value: 109376
+    Value: 206048
   Exists: 1
 --- !u!114 &2076952806888901988
 MonoBehaviour:
@@ -150,33 +213,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
---- !u!114 &3847472059584534691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Brain
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Brain
-  Guid:
-    Data1: 1280469779
-    Data2: 1280234412
-    Data3: -1634803049
-    Data4: -769952052
-  Banks:
-  - {fileID: 134784188983510113}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 19617
 --- !u!114 &6545584241268025486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,10 +228,14 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638335870546787841
+=======
+  lastModified: 638335829660632170
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
-    Value: 996
+    Value: 1064
   Exists: 1
 --- !u!114 &7113883065979547754
 MonoBehaviour:

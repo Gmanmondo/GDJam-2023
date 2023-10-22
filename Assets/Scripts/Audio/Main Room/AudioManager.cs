@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
 
     public void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         if (instance != null)
         {
             Debug.LogError("Found more than one Audio Manager in the scene.");
@@ -28,7 +30,6 @@ public class AudioManager : MonoBehaviour
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
-        Debug.Log("hello");
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
