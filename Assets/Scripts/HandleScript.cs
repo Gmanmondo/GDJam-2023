@@ -30,6 +30,7 @@ public class HandleScript : MonoBehaviour
         {
             anim.SetBool("OpenSignal", true);
             doorOpen = true;
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, this.transform.position);
         }
 
 

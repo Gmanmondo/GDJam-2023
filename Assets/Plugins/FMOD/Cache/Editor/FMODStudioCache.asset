@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9046705440229811737
+--- !u!114 &-9142018353316536432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,18 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door Open
   m_EditorClassIdentifier: 
-  Path: FMOD-audio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638335829660602171
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &-8000187093051731279
+  Path: event:/SFX/Door Open
+  Guid:
+    Data1: -1788437223
+    Data2: 1116907084
+    Data3: -2010231908
+    Data4: 249371742
+  Banks:
+  - {fileID: -2219213201272262990}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7830596976237078610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,7 +46,7 @@ MonoBehaviour:
     Data3: -1634803049
     Data4: -769952052
   Banks:
-  - {fileID: 134784188983510113}
+  - {fileID: 4269979721125421170}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -47,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 19617
---- !u!114 &-6293138041781414013
+--- !u!114 &-5978720488490450156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,24 +64,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Footsteps
+  m_Name: event:/SFX/New Event
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Footsteps
+  Path: event:/SFX/New Event
   Guid:
-    Data1: 466157915
-    Data2: 1122574168
-    Data3: 1802163624
-    Data4: -1330315421
+    Data1: 1493790248
+    Data2: 1295926243
+    Data3: 882832828
+    Data4: -377605349
   Banks:
-  - {fileID: 7113883065979547754}
+  - {fileID: -2219213201272262990}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 760
---- !u!114 &-5479542973729026653
+  Length: 700
+--- !u!114 &-2219213201272262990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD-audio/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638335884350683808
+  FileSizes:
+  - Name: Desktop
+    Value: 86304
+  Exists: 1
+--- !u!114 &-2063302190379389615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +120,7 @@ MonoBehaviour:
     Data3: 1307919273
     Data4: -1893014938
   Banks:
-  - {fileID: 134784188983510113}
+  - {fileID: 4269979721125421170}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -114,28 +141,24 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6545584241268025486}
-  - {fileID: 134784188983510113}
-  - {fileID: -9046705440229811737}
-  - {fileID: 7113883065979547754}
+  - {fileID: 4496739100473031448}
+  - {fileID: 4269979721125421170}
+  - {fileID: 5709153703946568110}
+  - {fileID: -2219213201272262990}
   EditorEvents:
-  - {fileID: 2076952806888901988}
-  - {fileID: -6293138041781414013}
-  - {fileID: 2792411017998031084}
-  - {fileID: -8000187093051731279}
-  - {fileID: -5479542973729026653}
+  - {fileID: -7830596976237078610}
+  - {fileID: -2063302190379389615}
+  - {fileID: -9142018353316536432}
+  - {fileID: -5978720488490450156}
+  - {fileID: 5996077156277229671}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -9046705440229811737}
+  - {fileID: 5709153703946568110}
   StringsBanks:
-  - {fileID: 6545584241268025486}
-<<<<<<< Updated upstream
-  cacheTime: 638335870546787841
-=======
-  cacheTime: 638335829662754184
->>>>>>> Stashed changes
+  - {fileID: 4496739100473031448}
+  cacheTime: 638335884350683808
   cacheVersion: 131608
---- !u!114 &134784188983510113
+--- !u!114 &4269979721125421170
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,70 +173,12 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-<<<<<<< Updated upstream
-  lastModified: 638335870546767832
-=======
-  lastModified: 638335829662754184
->>>>>>> Stashed changes
+  lastModified: 638335884349433527
   FileSizes:
   - Name: Desktop
     Value: 206048
   Exists: 1
---- !u!114 &2076952806888901988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door Open
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door Open
-  Guid:
-    Data1: -1788437223
-    Data2: 1116907084
-    Data3: -2010231908
-    Data4: 249371742
-  Banks:
-  - {fileID: 7113883065979547754}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2792411017998031084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/New Event
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/New Event
-  Guid:
-    Data1: 1493790248
-    Data2: 1295926243
-    Data3: 882832828
-    Data4: -377605349
-  Banks:
-  - {fileID: 7113883065979547754}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 700
---- !u!114 &6545584241268025486
+--- !u!114 &4496739100473031448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,16 +193,12 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 638335870546787841
-=======
-  lastModified: 638335829660632170
->>>>>>> Stashed changes
+  lastModified: 638335884348693366
   FileSizes:
   - Name: Desktop
     Value: 1064
   Exists: 1
---- !u!114 &7113883065979547754
+--- !u!114 &5709153703946568110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,13 +208,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: FMOD-audio/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638335817882567035
+  Path: FMOD-audio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638335884348673352
   FileSizes:
   - Name: Desktop
-    Value: 86592
+    Value: 1036
   Exists: 1
+--- !u!114 &5996077156277229671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps
+  Guid:
+    Data1: 773788920
+    Data2: 1192864108
+    Data3: -102197611
+    Data4: 386604386
+  Banks:
+  - {fileID: -2219213201272262990}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 490

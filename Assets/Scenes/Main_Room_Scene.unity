@@ -2522,13 +2522,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87f78730e89ae24e884541847806ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <playerFootsteps>k__BackingField:
+  <playerFootSteps>k__BackingField:
     Guid:
-      Data1: 1493790248
-      Data2: 1295926243
-      Data3: 882832828
-      Data4: -377605349
-    Path: event:/SFX/New Event
+      Data1: 773788920
+      Data2: 1192864108
+      Data3: -102197611
+      Data4: 386604386
+    Path: event:/SFX/Footsteps
   <ambience>k__BackingField:
     Guid:
       Data1: 1280469779
@@ -2536,6 +2536,13 @@ MonoBehaviour:
       Data3: -1634803049
       Data4: -769952052
     Path: event:/Ambience/Brain Sounds
+  <doorOpen>k__BackingField:
+    Guid:
+      Data1: -1788437223
+      Data2: 1116907084
+      Data3: -2010231908
+      Data4: 249371742
+    Path: event:/SFX/Door Open
 --- !u!1 &1290958582
 GameObject:
   m_ObjectHideFlags: 0

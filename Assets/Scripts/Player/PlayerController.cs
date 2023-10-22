@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         //player rigidbody reference from singleton. freezes rotation for less jank.
         PlayerSingleton._pRef.pRB.freezeRotation = true;
 
-        playerFootsteps = AudioManager.instance.CreateInstance (FMODEvents.instance.playerFootsteps);
+        playerFootsteps = AudioManager.instance.CreateInstance (FMODEvents.instance.playerFootSteps);
 
     }
 
