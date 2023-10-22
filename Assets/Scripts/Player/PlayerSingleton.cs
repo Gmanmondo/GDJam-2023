@@ -6,7 +6,7 @@ public class PlayerSingleton : MonoBehaviour
 {
     public static PlayerSingleton _pRef;
 
-
+    
     public Transform pTrans { get; protected set; }
     public CapsuleCollider pCollide { get; protected set; }
     public Rigidbody pRB { get; protected set; }

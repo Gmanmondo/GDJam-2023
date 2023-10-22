@@ -18,7 +18,6 @@ public class BedEndingCheck : MonoBehaviour
     {
         if (blockCount >= 2)    
         {
-            FadeOut.GetComponent<WaitFadeScript>().ResetTimer();
             FadeOut.GetComponent<WaitFadeScript>().shouldTime = true;
         }
         if (blockCount < 2)
