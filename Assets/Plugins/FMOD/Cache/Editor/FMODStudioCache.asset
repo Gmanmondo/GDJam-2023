@@ -15,12 +15,12 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638335163657293419
+  lastModified: 638335817882246964
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
---- !u!114 &-4670581487114606483
+--- !u!114 &-6293138041781414013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,23 +30,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Mind Sounds
+  m_Name: event:/SFX/Footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Ambience/Mind Sounds
+  Path: event:/SFX/Footsteps
   Guid:
-    Data1: -1843085708
-    Data2: 1095025318
-    Data3: 2033339562
-    Data4: -370872473
+    Data1: 466157915
+    Data2: 1122574168
+    Data3: 1802163624
+    Data4: -1330315421
   Banks:
-  - {fileID: 134784188983510113}
-  IsStream: 1
+  - {fileID: 7113883065979547754}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 19617
+  Length: 760
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,14 +65,16 @@ MonoBehaviour:
   - {fileID: -9046705440229811737}
   - {fileID: 7113883065979547754}
   EditorEvents:
-  - {fileID: -4670581487114606483}
   - {fileID: 3847472059584534691}
+  - {fileID: 2076952806888901988}
+  - {fileID: -6293138041781414013}
+  - {fileID: 2792411017998031084}
   EditorParameters: []
   MasterBanks:
   - {fileID: -9046705440229811737}
   StringsBanks:
   - {fileID: 6545584241268025486}
-  cacheTime: 638335265610563568
+  cacheTime: 638335817882567035
   cacheVersion: 131608
 --- !u!114 &134784188983510113
 MonoBehaviour:
@@ -89,11 +91,65 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638335265610563568
+  lastModified: 638335806451885235
   FileSizes:
   - Name: Desktop
-    Value: 110688
+    Value: 109376
   Exists: 1
+--- !u!114 &2076952806888901988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door Open
+  Guid:
+    Data1: -1788437223
+    Data2: 1116907084
+    Data3: -2010231908
+    Data4: 249371742
+  Banks:
+  - {fileID: 7113883065979547754}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2792411017998031084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/New Event
+  Guid:
+    Data1: 1493790248
+    Data2: 1295926243
+    Data3: 882832828
+    Data4: -377605349
+  Banks:
+  - {fileID: 7113883065979547754}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
 --- !u!114 &3847472059584534691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +192,10 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638335265610563568
+  lastModified: 638335817882276975
   FileSizes:
   - Name: Desktop
-    Value: 902
+    Value: 996
   Exists: 1
 --- !u!114 &7113883065979547754
 MonoBehaviour:
@@ -156,8 +212,8 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638335163657429626
+  lastModified: 638335817882567035
   FileSizes:
   - Name: Desktop
-    Value: 494
+    Value: 86592
   Exists: 1

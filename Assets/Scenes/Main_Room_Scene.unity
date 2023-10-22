@@ -1530,6 +1530,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87f78730e89ae24e884541847806ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: 1493790248
+      Data2: 1295926243
+      Data3: 882832828
+      Data4: -377605349
+    Path: event:/SFX/New Event
   <ambience>k__BackingField:
     Guid:
       Data1: 1280469779

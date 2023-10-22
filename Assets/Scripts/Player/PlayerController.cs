@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,11 +14,16 @@ public class PlayerController : MonoBehaviour
 
     Vector3 moveDirection;
 
+    //audio
+    private EventInstance playerFootsteps;
+
 
     private void Start()
     {
         //player rigidbody reference from singleton. freezes rotation for less jank.
         PlayerSingleton._pRef.pRB.freezeRotation = true;
+
+        playerFootsteps = AudioManager.instance.CreateInstance (FMODEvents.instance.playerFootsteps);
 
     }
 
@@ -29,6 +35,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        UpdateSound();
     }
     private void PlayerInput()
     {
@@ -49,6 +56,24 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 loweredVel = currentVel.normalized * moveSpeed;
             PlayerSingleton._pRef.pRB.velocity = new Vector3(loweredVel.x, 0, loweredVel.z);
+        }
+    }
+
+    private void UpdateSound()
+    {
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+        }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
 }
