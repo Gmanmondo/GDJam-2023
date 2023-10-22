@@ -11,7 +11,7 @@ public class PlayerSingleton : MonoBehaviour
     public CapsuleCollider pCollide { get; protected set; }
     public Rigidbody pRB { get; protected set; }
    
-
+    public PlayerController pCont { get; set; }
     public void Awake()
     {
         if (_pRef == null)
@@ -24,5 +24,7 @@ public class PlayerSingleton : MonoBehaviour
         pRB = GetComponent<Rigidbody>();
 
         pCollide = GetComponentInChildren<CapsuleCollider>();
+
+        pCont = GetComponent<PlayerController>();
     }
 }

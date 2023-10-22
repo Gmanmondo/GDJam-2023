@@ -24,6 +24,7 @@ public class EyeManagerScript : MonoBehaviour
         Eye.SetActive(true);
         Door.GetComponent<HandleScript>().eyeAngry = true;
         Door.GetComponent<ObjectDetails>().description = "You are denied exit";
+        PlayerSingleton._pRef.pCont.moveSpeed = 4;
     }
 
     public void EyeDefeated()
@@ -31,5 +32,6 @@ public class EyeManagerScript : MonoBehaviour
         Eye.SetActive(false);
         Door.GetComponent<HandleScript>().eyeAngry = false;
         Door.GetComponent<ObjectDetails>().description = "Press [E] to be Free";
+        PlayerSingleton._pRef.pCont.moveSpeed = 2;
     }
 }
