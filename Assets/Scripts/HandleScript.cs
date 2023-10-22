@@ -33,4 +33,9 @@ public class HandleScript : MonoBehaviour
 
 
     }
+
+    public void CloseDoor()
+    {
+        anim.SetBool("CloseSignal", true);
+    }
 }

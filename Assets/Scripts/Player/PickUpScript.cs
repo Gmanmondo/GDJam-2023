@@ -135,7 +135,8 @@ public class PickUpScript : MonoBehaviour
         //same as drop function, but add force to object before undefining it
         Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), PlayerSingleton._pRef.pCollide, false);
         heldObj.layer = 0;
-        foreach (Transform child in transform)
+        var children = transform.GetComponentsInChildren<Transform>();
+        foreach (Transform child in children)
         {
             child.gameObject.layer = 0;
         }
