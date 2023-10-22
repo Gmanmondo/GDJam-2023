@@ -81,7 +81,7 @@ public class PickUpScript : MonoBehaviour
             heldObjRb = pickUpObj.GetComponent<Rigidbody>(); //assign Rigidbody
             heldObjRb.isKinematic = true;
             heldObjRb.transform.parent = holdPos.transform; //parent object to holdposition
-            // heldObj.layer = LayerNumber; //change the object layer to the holdLayer
+            heldObj.layer = LayerNumber; //change the object layer to the holdLayer
             var children = transform.GetComponentsInChildren<Transform>();
             foreach (Transform child in children)
             {
@@ -112,6 +112,7 @@ public class PickUpScript : MonoBehaviour
     {
         //same as drop function, but add force to object before undefining it
         Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), PlayerSingleton._pRef.pCollide, false);
+        heldObj.layer = 0;
         foreach (Transform child in transform)
         {
             child.gameObject.layer = 0;
