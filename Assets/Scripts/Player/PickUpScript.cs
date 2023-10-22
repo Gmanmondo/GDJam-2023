@@ -5,12 +5,12 @@ using UnityEngine;
 public class PickUpScript : MonoBehaviour
 {
     public Transform holdPos;
-
+     
     public float throwForce = 500f; //force at which the object is thrown at
     public float pickUpRange = 5f; //how far the player can pickup the object from
 
 
-    private string testholder;
+    private string textHolder;
     //References to what we are holding
     private GameObject heldObj;
     private Rigidbody heldObjRb;
@@ -36,7 +36,8 @@ public class PickUpScript : MonoBehaviour
         {
             if (onvisual.transform.gameObject.GetComponent("ObjectDetails") != null)
             {
-                //textHolder = onvisual.GetComponent<ObjectDetails>();
+                textHolder = onvisual.transform.GetComponent<ObjectDetails>().description;
+
             }
         }
         else
