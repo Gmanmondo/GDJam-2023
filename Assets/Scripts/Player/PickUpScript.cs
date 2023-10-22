@@ -88,6 +88,7 @@ public class PickUpScript : MonoBehaviour
             {
                 child.gameObject.layer = LayerNumber;
             }
+            
             //make sure object doesnt collide with player, it can cause weird bugs
             Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), PlayerSingleton._pRef.pCollide, true);
 
@@ -121,6 +122,8 @@ public class PickUpScript : MonoBehaviour
         heldObjRb.isKinematic = false;
         heldObj.transform.parent = null;
         heldObjRb.AddForce(transform.forward * throwForce);
+        if (heldObj.GetComponent("PlateScript") != null)
+            heldObj.GetComponent<PlateScript>().PickUp();
         heldObj = null;
     }
     void StopClipping() //function only called when dropping/throwing

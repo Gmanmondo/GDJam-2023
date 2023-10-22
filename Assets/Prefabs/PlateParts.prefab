@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 796103573746116094}
   - component: {fileID: 6470282929319542222}
   - component: {fileID: 5889536057521125374}
+  - component: {fileID: 4541933952121753412}
   m_Layer: 0
   m_Name: Plate_selection
-  m_TagString: Untagged
+  m_TagString: Throwable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +116,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2540315477885027105, guid: 99410176c03e4f84f84d4749d1d202e7, type: 3}
+--- !u!114 &4541933952121753412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665518576989654979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: A Peice of Plate - Sharp
 --- !u!1 &6457856899113525130
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,9 +176,10 @@ GameObject:
   - component: {fileID: 7343302086318385328}
   - component: {fileID: 6324362294661667189}
   - component: {fileID: 3552805972334392885}
+  - component: {fileID: 8946911539116210060}
   m_Layer: 0
   m_Name: Plate
-  m_TagString: Untagged
+  m_TagString: Throwable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,6 +279,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3736213754101489272, guid: 99410176c03e4f84f84d4749d1d202e7, type: 3}
+--- !u!114 &8946911539116210060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690279062663961307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: A Peice of Plate - Sharp
 --- !u!1 &6997558305801995773
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,9 +305,10 @@ GameObject:
   - component: {fileID: 4366619926964562457}
   - component: {fileID: 8990533578212462907}
   - component: {fileID: 6429057198214401401}
+  - component: {fileID: 3683525718794953688}
   m_Layer: 0
   m_Name: Plate_selection_selection
-  m_TagString: Untagged
+  m_TagString: Throwable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,3 +408,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3563502981361096005, guid: 99410176c03e4f84f84d4749d1d202e7, type: 3}
+--- !u!114 &3683525718794953688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997558305801995773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985c0ee6c9cc64f40b7a03ebba176b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: A Peice of Plate - Sharp
