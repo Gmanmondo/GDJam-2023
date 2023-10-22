@@ -599,6 +599,7 @@ MonoBehaviour:
   timetoWait: 6
   timer: 0
   fading: 0
+  shouldTime: 1
   nextScene: Main_Room_Scene
   modifier: 0
 --- !u!114 &1473330108

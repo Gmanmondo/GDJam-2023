@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ending3.unity
-    guid: 4d44a9f2abfb6d0499bff092dc2c2edc
-  - enabled: 1
     path: Assets/Scenes/Main_Room_Scene.unity
     guid: 13f4d6a70d7deb2429ad02925def64e6
+  - enabled: 1
+    path: Assets/Scenes/Ending3.unity
+    guid: 4d44a9f2abfb6d0499bff092dc2c2edc
   m_configObjects: {}

@@ -9,19 +9,27 @@ public class WaitFadeScript : MonoBehaviour
     public float timetoWait;
     public float timer;
     public bool fading;
-
+    public bool shouldTime;
     public string nextScene;
     public float modifier; //modify how fast it fades
 
 
     private void Awake()
     {
-        timer = timetoWait;
+       ResetTimer();
     }
 
+    public void ResetTimer()
+    {
+        timer = timetoWait;
+        GetComponent<Animator>().SetBool("fadeout", false);
+    }
     private void Update()
     {
-        timer -= Time.deltaTime ;
+        if (shouldTime)
+        {
+            timer -= Time.deltaTime;
+        }
         if (timer <= 0.0)
         {
             if (!fading)
