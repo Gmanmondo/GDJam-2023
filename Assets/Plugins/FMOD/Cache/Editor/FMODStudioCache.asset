@@ -42,7 +42,11 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 638336778258971493
+=======
+  lastModified: 638336682009730528
+>>>>>>> 14967cdb2be86959b65fde0a878164454b0f2d0c
   FileSizes:
   - Name: Desktop
     Value: 1386
@@ -89,7 +93,7 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638336061970993110
+  lastModified: 638336682009745641
   FileSizes:
   - Name: Desktop
     Value: 206048
@@ -136,7 +140,11 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 638336778258941486
+=======
+  lastModified: 638335163657293419
+>>>>>>> 14967cdb2be86959b65fde0a878164454b0f2d0c
   FileSizes:
   - Name: Desktop
     Value: 1036
