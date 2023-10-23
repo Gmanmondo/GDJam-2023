@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using FMODUnity;
 using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
     private EventInstance ambienceEventInstance;
+    private EventInstance stepEventInstance;
 
     public static AudioManager instance {get; private set;}
 
@@ -28,6 +30,11 @@ public class AudioManager : MonoBehaviour
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
+    }
+
+    public void SetFootstepSpeed(Footsteps stepSpeed)
+    {
+        stepEventInstance.setParameterByName("Steep Speed", (float) stepSpeed);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)

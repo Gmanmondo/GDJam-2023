@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{82824f40-5da8-4dad-8031-5c58845ea427}">
+		<property name="assetPath">
+			<value>SFX/Other/Bars Open.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.70530612244897961</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e16c254c-f686-4f4a-b509-30c13a4c527b}</destination>
+		</relationship>
+	</object>
+</objects>

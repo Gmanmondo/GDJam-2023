@@ -40,5 +40,7 @@ public class EyeManagerScript : MonoBehaviour
         PlayerSingleton._pRef.pCont.moveSpeed = 2;
         WinDoor.SetActive(true);
         playerEye.SetActive(true);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.eyeGouge, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.hurt, this.transform.position);
     }
 }
