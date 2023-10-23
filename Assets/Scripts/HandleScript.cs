@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
 
 public class HandleScript : MonoBehaviour
 {
@@ -33,7 +32,10 @@ public class HandleScript : MonoBehaviour
             AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, this.transform.position);
         }
 
-
+        if (eyeAngry && !doorOpen)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.doorLocked, this.transform.position);
+        }
     }
 
     public void CloseDoor()

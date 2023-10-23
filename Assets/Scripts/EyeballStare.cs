@@ -21,7 +21,7 @@ public class EyeballStare : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<ObjectDetails>().sharp)
                 {
-                m_EMS.EyeDefeated();
+                    m_EMS.EyeDefeated();
                 }
         }
     }
