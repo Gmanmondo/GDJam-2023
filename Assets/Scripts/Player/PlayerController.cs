@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
 
     //audio
-    private EventInstance playerFootsteps;
+    public EventInstance playerFootsteps;
 
 
     private void Start()

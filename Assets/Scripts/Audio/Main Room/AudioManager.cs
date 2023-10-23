@@ -32,10 +32,10 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
-    public void SetFootstepSpeed(Footsteps stepSpeed)
-    {
-        stepEventInstance.setParameterByName("Steep Speed", (float) stepSpeed);
-    }
+    // public void SetFootstepSpeed(Footsteps stepSpeed)
+    // {
+    //     stepEventInstance.setParameterByName("Steep Speed", (float) stepSpeed);
+    // }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
