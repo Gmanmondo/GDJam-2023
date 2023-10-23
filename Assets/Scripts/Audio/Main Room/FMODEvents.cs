@@ -12,6 +12,7 @@ public class FMODEvents : MonoBehaviour
     [field: Header("World Effects")]
     [field: SerializeField] public EventReference plateBreak {get; private set;}
     [field: SerializeField] public EventReference bucketWall {get; private set;}
+    [field: SerializeField] public EventReference bucketGround {get; private set;}
     [field: SerializeField] public EventReference brickBreak {get; private set;}
     [field: SerializeField] public EventReference ambience {get; private set;}
     [field: SerializeField] public EventReference doorOpen {get; private set;}
