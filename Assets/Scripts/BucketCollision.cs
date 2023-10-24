@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class BucketCollision : MonoBehaviour
 {
+    private bool firstCollision = true;
+
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Wall")
+        if (firstCollision)
         {
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.bucketWall, this.transform.position);
+            firstCollision = false;
         }
-        else if (other.transform.tag == "Ground")
+        else
         {
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.bucketGround, this.transform.position);
+            if (other.transform.tag == "Wall")
+            {
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.bucketWall, this.transform.position);
+            }
+            else if (other.transform.tag == "Ground")
+            {
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.bucketGround, this.transform.position);
+            }
         }
     }
 }
