@@ -10,6 +10,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference playerFootSteps {get; private set;}
     [field: SerializeField] public EventReference hurt {get; private set;}
     [field: SerializeField] public EventReference eyeGouge {get; private set;}
+    [field: SerializeField] public EventReference flashBang {get; private set;}
 
     [field: Header("Prop Effects")]
     [field: SerializeField] public EventReference plateBreak {get; private set;}

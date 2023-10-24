@@ -3059,6 +3059,13 @@ MonoBehaviour:
       Data3: -1848569669
       Data4: -1895318277
     Path: event:/SFX/Eye Gouge
+  <flashBang>k__BackingField:
+    Guid:
+      Data1: -1886677751
+      Data2: 1329963546
+      Data3: 878478992
+      Data4: -1422725971
+    Path: event:/SFX/Flash Bang
   <plateBreak>k__BackingField:
     Guid:
       Data1: -1155698533
