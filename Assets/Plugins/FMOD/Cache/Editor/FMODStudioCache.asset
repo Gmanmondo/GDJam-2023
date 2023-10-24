@@ -232,7 +232,7 @@ MonoBehaviour:
   - {fileID: -8101806003452992509}
   StringsBanks:
   - {fileID: -1022094501784880063}
-  cacheTime: 638336895360441801
+  cacheTime: 638336940578349920
   cacheVersion: 131608
 --- !u!114 &718884737615560068
 MonoBehaviour:
@@ -465,10 +465,10 @@ MonoBehaviour:
   Path: FMOD-audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638336895360441801
+  lastModified: 638336940578349920
   FileSizes:
   - Name: Desktop
-    Value: 343136
+    Value: 347488
   Exists: 1
 --- !u!114 &6969581073149796545
 MonoBehaviour:
