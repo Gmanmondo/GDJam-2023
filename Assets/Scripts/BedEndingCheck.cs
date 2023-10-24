@@ -18,14 +18,14 @@ public class BedEndingCheck : MonoBehaviour
     {
         if (blockCount >= 2)    
         {
-            FadeOut.GetComponent<WaitFadeScript>().shouldTime = true;
             blockedIn = true;
+            FadeOut.GetComponent<WaitFadeScript>().shouldTime = true;
         }
         if (blockCount < 2)
         {
+           
             FadeOut.GetComponent<WaitFadeScript>().ResetTimer();
             FadeOut.GetComponent<WaitFadeScript>().shouldTime = false;
-            
         }
     }
 }

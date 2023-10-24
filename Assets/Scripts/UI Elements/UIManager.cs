@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     public TypeWriter [] writer;
     void Start()
     {
+        bed = FindObjectOfType<BedEndingCheck>();
         InvokeRepeating("Dialogue",0f,3f);
     }
 
