@@ -13,17 +13,19 @@ public class BedEndingCheck : MonoBehaviour
     public float maxTimer;
     public float remainingTimer;
     public int blockCount;
-    bool blockedIn = false;
+    public bool blockedIn = false;
     private void Update()
     {
         if (blockCount >= 2)    
         {
             FadeOut.GetComponent<WaitFadeScript>().shouldTime = true;
+            blockedIn = true;
         }
         if (blockCount < 2)
         {
             FadeOut.GetComponent<WaitFadeScript>().ResetTimer();
             FadeOut.GetComponent<WaitFadeScript>().shouldTime = false;
+            
         }
     }
 }

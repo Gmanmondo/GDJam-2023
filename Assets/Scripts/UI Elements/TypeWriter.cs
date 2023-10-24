@@ -24,7 +24,7 @@ public class TypeWriter : MonoBehaviour
             writer = _text.text;
             _text.text = "";
 
-            StartCoroutine("TypeWriterText");
+            //StartCoroutine("TypeWriterText");
         }
 
         if (_tmpProText != null)
@@ -32,7 +32,7 @@ public class TypeWriter : MonoBehaviour
             writer = _tmpProText.text;
             _tmpProText.text = "";
 
-            StartCoroutine("TypeWriterTMP");
+            //StartCoroutine("TypeWriterTMP");
         }
     }
 

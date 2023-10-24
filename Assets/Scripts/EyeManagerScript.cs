@@ -12,6 +12,7 @@ public class EyeManagerScript : MonoBehaviour
     public GameObject playerEye;
     public GameObject Door;
     public GameObject WinDoor;
+    public GameObject UIManager;
 
     public GameObject FMS;
     private void Start()
@@ -27,6 +28,7 @@ public class EyeManagerScript : MonoBehaviour
         bars.SetActive(false);
         Eye.SetActive(true);
         Door.GetComponent<HandleScript>().eyeAngry = true;
+        UIManager.GetComponent<UIManager>().brick = true;
         Door.GetComponent<ObjectDetails>().description = "You are denied exit";
         PlayerSingleton._pRef.pCont.moveSpeed = 4;
     }

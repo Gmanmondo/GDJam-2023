@@ -8,13 +8,16 @@ using Random = UnityEngine.Random;
 
 public class UIManager : MonoBehaviour
 {
+    public BedEndingCheck bed;
+    public bool brick;
     public bool speaking = false;
+    public bool eyeDefeat;
     public TextMeshProUGUI text1;
     public TextMeshPro text2;
     public TypeWriter [] writer;
     void Start()
     {
-        InvokeRepeating("Dialogue",1f,10f);
+        InvokeRepeating("Dialogue",0f,3f);
     }
 
     // Update is called once per frame
@@ -35,24 +38,40 @@ public class UIManager : MonoBehaviour
         }
         */
         speaking = true;
-        float rnd;
-        rnd = Random.Range(0, 4);
-        switch (rnd)
+        int rnd;
+        rnd = Random.Range(1, 4);
+        Debug.Log(rnd);
+        if (!bed.blockedIn && !brick)
         {
-            case 1:
-                text1.text = "It's your time to leave";
-                text2.text = "It's your time to leave";
-                break;
-            case 2:
-                text1.text = "Why are you still here, can't you see the door?";
-                text2.text = "Why are you still here, can't you see the door?";
-                break;
-            case 3:
-                text1.text = "There's only one way out of here";
-                text2.text = "There's only one way out of here";
-                break;
+            switch (rnd)
+            {
+                case 1:
+                    text1.text = "It's your time to leave";
+                    text2.text = "It's your time to leave";
+                    break;
+                case 2:
+                    text1.text = "Why are you still here, can't you see the door?";
+                    text2.text = "Why are you still here, can't you see the door?";
+                    break;
+                case 3:
+                    text1.text = "There's only one way out of here";
+                    text2.text = "There's only one way out of here";
+                    break;
+            }
         }
 
+        if (brick)
+        {
+            text1.text = "You idiot, look what you've done to yourself";
+            text2.text = "You idiot, look what you've done to yourself";
+        }
+
+        if (bed.blockedIn)
+        {
+            text1.text = "Coward! This could have all been over";
+            text2.text = "Coward! This could have all been over";
+        }
+        
         
 
     }
