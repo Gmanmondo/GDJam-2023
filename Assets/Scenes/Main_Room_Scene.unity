@@ -697,6 +697,7 @@ MonoBehaviour:
   playerEye: {fileID: 181449852}
   Door: {fileID: 156151660531144274}
   WinDoor: {fileID: 633139517}
+  UIManager: {fileID: 1129250717}
   FMS: {fileID: 540704837}
 --- !u!1 &460390365
 GameObject:
@@ -2659,7 +2660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11fd0791e1929846a967ff3c47cd7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bed: {fileID: 1997402775}
+  brick: 0
   speaking: 0
+  eyeDefeat: 0
   text1: {fileID: 1587874553}
   text2: {fileID: 926260245}
   writer:
@@ -4347,6 +4351,7 @@ MonoBehaviour:
   maxTimer: 3
   remainingTimer: 0
   blockCount: 0
+  blockedIn: 0
 --- !u!1 &2143823691
 GameObject:
   m_ObjectHideFlags: 0
