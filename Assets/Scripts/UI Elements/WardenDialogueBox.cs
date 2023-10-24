@@ -33,7 +33,8 @@ public class WardenDialogueBox : MonoBehaviour
         }
         FollowPlayer();
         //Debug.Log(seeDialogue.transform.gameObject.name);
-        Debug.Log(UITextbox.color.a);
+        //Debug.Log(UITextbox.color.a);
+        Debug.Log(manager.speaking);
     }
 
     void ShowUI()
