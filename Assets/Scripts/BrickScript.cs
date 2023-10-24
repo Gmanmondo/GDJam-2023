@@ -46,6 +46,7 @@ public class BrickScript : MonoBehaviour
                 {
                     GameObject.Find("EyeManager").GetComponent<EyeManagerScript>().BrickBroken();
                     AudioManager.instance.PlayOneShot(FMODEvents.instance.barsOpen, this.transform.position);
+                    AudioManager.instance.PlayOneShot(FMODEvents.instance.flashBang, this.transform.position);
                     Destroy(this.gameObject);
                 }
 
